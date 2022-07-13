@@ -1,0 +1,18 @@
+---
+layout: 'base.njk'
+---
+
+<section class="container blog" >
+    <div>
+        Blog
+    </div>
+</section>
+
+<article class="main-article">
+    <div class="post">
+        <img src="{{ image }}" alt="" class="image">
+        <h3 class="title">{{ title }}</h3>
+        <p class="text">{{ post.data.description }}</p>
+        {{ content | safe }}
+    </div>
+</article>
